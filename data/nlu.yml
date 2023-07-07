@@ -1,0 +1,152 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - 안녕
+    - 안녕하세요
+    - 반가워
+    - ㅎㅇ
+    - 하이
+    - 하위
+    - 좋은 아침
+    - Hi
+    - Hello
+    - 안녕하십니까
+    - 반갑습니다
+- intent: goodbye
+  examples: |
+    - 잘가
+    - 잘있어
+    - 굿바이
+    - 이제 갈께
+    - Bye
+- intent: bot_challenge
+  examples: |
+    - 너 봇이야?
+    - 너 사람이야?
+    - 나 봇한테 얘기하고 있니?
+    - 나 사람이랑 애기하고 있니?
+    - 너 누구야?
+    - 너는 누구니?
+    - 누구야 너
+- intent: standings
+  examples: |
+    - 순위
+    - 순위 알려줘
+    - 순위 좀 알려줘
+    - LCK 순위를 알려줘
+    - 지금 누가 1등이야?
+    - 지금 순위가 어떻게 돼?
+    - 오늘 LCK 순위를 알려줘
+    - 오늘 LCK 순위 좀 알려줄래?
+    - LCK 랭킹 알려줘
+- intent: thanks
+  examples: |
+    - 굿
+    - 땡큐
+    - Good
+    - 고마워!!
+    - 도움이 됐어
+- intent: schedule
+  examples: |
+    - [4월](Month) [9일](Day) 경기 일정
+    - [3월](Month) [25일](Day) 경기 일정
+    - [6월](Month) [7일](Day) 경기 알려줘
+    - [3월](Month) [12일](Day) 경기 일정 알려줘
+    - [3월](Month) [12일](Day) 경기 결과 알려줘
+    - [1월](Month) [25일](Day) 경기 일정을 알고싶어
+- intent: insult
+  examples: |
+    - 멍청이
+    - 바보
+    - 니가 바보야?
+    - 니가 진짜 바보다
+    - 도움이 안돼
+    - 정말 쓸모없어
+    - 너 진짜 쓸모없구나?
+    - 넌 도움이 안돼
+- intent: faker
+  examples: |
+    - 페이커
+    - faker
+    - 빠커
+    - 이상혁
+    - 고전파
+    - GOAT
+    - 페이커가 뭐야
+    - 페이커가 누군데
+    - 페이커에 대해서 알려줘
+    - 전설적인 선수에 대해 알려줘
+- intent: lck
+  examples: |
+    - LCK
+    - LCK가 뭐야
+    - LCK에 대해 알려줘
+- intent: lol
+  examples: |
+    - LoL
+    - 롤이 뭐야?
+    - 롤에 대해서 설명해줘
+    - 리그오브레전드가 뭐야
+    - league of legends가 뭐야
+- intent: CS
+  examples: |
+    - CS가 뭐야?
+    - 미니언이 뭐야?
+    - 미니언
+- intent: what_are_you_doing
+  examples: |
+    - 뭐해?
+    - 뭐하냐?
+    - 뭐하는데
+    - 뭐 하는 중 이야?
+    - 지금 뭐하는 중이야?
+- intent: tier
+  examples: |
+    - 티어
+    - 롤 티어
+    - 티어가 뭐야?
+    - 롤티어에 대해 알려줘
+- intent: team_info
+  examples: |
+    - [T1](team_name) 뭐야?
+    - [젠지](team_name) 대해서 알려줘
+    - [DRX](team_name) 어떤 팀이야?
+    - [KT](team_name) 뭐하는 팀이야?
+- intent: team_players
+  examples: |
+    - [DRX](team_name) 선수
+    - [젠지](team_name) 선수 알려줘
+    - [T1](team_name) 선수 목록 알려줘
+
+- lookup: team_name
+  examples: |
+    - T1
+    - 티원
+    - GEN
+    - 젠지
+    - DRX
+    - 디알엑스
+    - KT
+    - 케이티
+    - HLE
+    - 한화
+    - 한화생명
+    - DK
+    - 디플
+    - 디플러스 기아
+    - LSB
+    - 리브
+    - 샌드박스
+    - 리브 샌드박스
+    - KDF
+    - 광동
+    - 광동 프릭스
+    - BRO
+    - 프레딧
+    - 브리온
+    - 프레딧 브리온
+    - NS
+    - 농심
+    - 농심 레드포스

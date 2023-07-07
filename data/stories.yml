@@ -1,0 +1,23 @@
+version: "3.1"
+
+- story: interactive_story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+# - story: interactive_story_1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: bot_challenge
+#   - action: utter_iamabot
+#   - intent: standings
+#   - action: utter_standings
+#   - action: action_standings
+#   - intent: thanks
+#   - action: utter_thanks
+#   - intent: greet
+#   - intent: goodbye
+#   - action: utter_goodbye

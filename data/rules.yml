@@ -1,0 +1,83 @@
+version: "3.1"
+
+rules:
+
+- rule: Say Hello anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Show standings anytime the user asks
+  steps:
+  - intent: standings
+  - action: action_standings
+
+- rule: Say Your Welcome anytime the user thanks to chatbot
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: 경기 일정
+  steps:
+  - intent: schedule
+  - action: action_schedule  
+   
+- rule: 바보
+  steps:
+  - intent: insult
+  - action: utter_insult
+
+- rule: 페이커
+  steps:
+  - intent: faker
+  - action: utter_faker
+
+- rule: LCK
+  steps:
+  - intent: lck
+  - action: utter_lck 
+
+- rule: LOL
+  steps:
+  - intent: lol
+  - action: utter_lol 
+
+- rule: 미니언
+  steps:
+  - intent: CS
+  - action: utter_CS
+
+- rule: 뭐해
+  steps:
+  - intent: What
+  - action: utter_What
+
+- rule: 티어
+  steps:
+  - intent: Tier
+  - action: utter_Tier
+
+- rule: Provide TeamInformation whenever the user asks
+  steps:
+  - intent: team_info
+  - action: action_teaminfo
+
+- rule: Provide TeamPlayes whenever the user asks
+  steps:
+  - intent: team_players
+  - action: action_teamplayers
